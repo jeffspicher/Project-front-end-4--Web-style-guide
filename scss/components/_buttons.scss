@@ -1,0 +1,51 @@
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @include transition-basic;
+  }
+  
+  .default {  // default and login button
+    background-color: $color-link-default; // skyblue
+    @include transition-hover-link;    // hover transition lighten
+  
+    } 
+  
+  
+  .error {
+    background-color: $color-error; // red
+    &:hover{
+      background:lighten($color-error,10%);
+    }
+  }
+  
+  .info {
+    background-color: #927bc1;
+    &:hover{
+      background:lighten(#927bc1,10%);
+    }
+  }
+  
+  .success {
+    background-color: #63cc82;
+    &:hover{
+      background:lighten(#63cc82,10%);
+    }
+  }
+  
+  .warning {
+    background-color:$color-warning; // light orange
+    &:hover{
+      background:lighten($color-warning,10%);
+    }
+  }
+  
